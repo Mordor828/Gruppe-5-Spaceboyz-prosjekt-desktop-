@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100vh;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: transitionIn 1s;
+}
+
+.navbar {
+  overflow: hidden;
+  padding-top: 20px;
+  animation: transitionIn 1s;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-right: 15px;
+  animation: transitionIn 1s;
+}
+
+li {
+  float: left;
+  padding-bottom: 20px;
+  animation: transitionIn 1s;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: oswald, sans-serif;
+  font-size: 30px;
+  color: #f4d835;
+  padding: 20px;
+}
+
+li a:hover {
+  color: rgb(48, 220, 250);
+}
+.content-area {
+  animation: transitionIn 1s;
+}
+
+hr {
+  margin-top: 20px;
+  border: 5;
+  height: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(70, 75, 73, 0),
+    rgb(89, 92, 100),
+    rgba(53, 51, 54, 0)
+  );
+  animation: transitionIn 1s;
+}
+
+.wrappertwo {
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  border-radius: 100px;
+}
+
+.wrappertwo p {
+  font-family: oswald, sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+  padding-right: 700px;
+}
+
+.wrapperthree {
+  align-items: center;
+  padding-left: 700px;
+  border-radius: 100px;
+}
+
+.wrapperthree p {
+  font-family: oswald, sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+  right: 72%;
+}
+
+/* Footer styling */
+
+.footer {
+  background-color: #5b5b5b;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  padding: 5px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons a:hover {
+  color: #4a90e2;
+}
+
+#email {
+  color: rgb(0, 0, 0);
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@media (prefer-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Page 3 Testing */
+
+.information {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 22, 5);
+  color: rgb(144, 144, 144);
+}
+
+.bg-img {
+  min-height: 100svh;
+  background-image: url(Photos/Alpha\_Beta_and_Proxima_Centauri.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  font-family: oswald, sans-serif;
+}
+
+.paragraph-container {
+  font-family: oswald, sans-serif;
+  font-size: 15px;
+}
+
+.information {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(7, 0, 22);
+  color: rgb(144, 144, 144);
+}
+
+.bg-img {
+  min-height: 100svh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+}
+
+#first {
+  background-image: url(Photos/Alpha\_Beta_and_Proxima_Centauri.png);
+}
+
+#second {
+  background-image: url(./Photos/Position_Alpha_Cen.png);
+}
